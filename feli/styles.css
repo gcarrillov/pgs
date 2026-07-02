@@ -598,4 +598,41 @@ body {
   pointer-events: none;
 }
 
+/*PORTARETRATOS*/
 
+.modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .3s;
+    z-index: 9999;
+}
+
+.modal.activo{
+    opacity: 1;
+    visibility: visible;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.galeria img{
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}

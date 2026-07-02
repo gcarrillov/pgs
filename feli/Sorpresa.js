@@ -3,6 +3,7 @@ const regalo = document.querySelector(".regalo");
 const regalos = document.querySelector(".regalos");
 const modalCarta = document.getElementById("modalCarta");
 
+
 regalo.addEventListener("click", () => {
   modalCarta.classList.add("activo");
 });
