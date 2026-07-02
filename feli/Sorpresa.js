@@ -34,3 +34,28 @@ llama.addEventListener("click", () => {
     overlay.classList.add("hidden");
   }, 1000);
 });
+/*======= GALERÍA DEL PORTARRETRATO ===================*/
+
+const portaretrato = document.getElementById("abrirGaleria");
+
+const modalGaleria = document.getElementById("modalGaleria");
+
+const album = modalGaleria.querySelector(".album");
+
+portaretrato.addEventListener("click",()=>{
+
+    modalGaleria.classList.add("activa");
+
+});
+
+modalGaleria.addEventListener("click",()=>{
+
+    modalGaleria.classList.remove("activa");
+
+});
+
+album.addEventListener("click",(e)=>{
+
+    e.stopPropagation();
+
+});

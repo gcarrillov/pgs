@@ -636,3 +636,111 @@ body {
     object-fit: cover;
     border-radius: 10px;
 }
+/*=========================
+ GALERÍA
+==========================*/
+
+.portaretrato{
+    cursor:pointer;
+}
+
+.modal-galeria{
+
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,.45);
+    backdrop-filter:blur(8px);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:99999;
+}
+
+.modal-galeria.activa{
+
+    opacity:1;
+    visibility:visible;
+
+}
+
+.album{
+
+    background:#fffefc;
+
+    width:min(900px,90vw);
+
+    border-radius:22px;
+
+    padding:30px;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.35);
+
+    transform:scale(.75) rotate(-2deg);
+
+    transition:.35s;
+
+}
+
+.modal-galeria.activa .album{
+
+    transform:scale(1) rotate(0);
+
+}
+
+.titulo-album{
+
+    text-align:center;
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+    color:#b35a8d;
+
+    font-family:cursive;
+
+}
+
+.contenedor-fotos{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.contenedor-fotos img{
+
+    width:100%;
+
+    aspect-ratio:4/3;
+
+    object-fit:cover;
+
+    background:white;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+    transition:.25s;
+
+}
+
+.contenedor-fotos img:hover{
+
+    transform:scale(1.05) rotate(-2deg);
+
+}

@@ -23,11 +23,11 @@
     <canvas id="canvas1"></canvas>
 
     <div class="contenedor">
-      <!-- caja de regalo izquierda -->
+      <!-- portraretrato -->
       <div class="portaretrato-torta-caja">
-        <div class="portaretrato">
+        <div class="portaretrato"  id="abrirGaleria">
           <div class="marco">
-            <img src="/proyectos/Feliz Cumpleaños/recursos/cumpleañero.png" alt="Foto" />
+            <img src="portada.png" alt="Foto" />
           </div>
           <div class="soporte-marco"></div>
         </div>
@@ -88,13 +88,39 @@
     <canvas id="canvas2"></canvas>
 
     <!--Todo Oscuro-->
-    <audio id="soplido" src="/proyectos/Feliz Cumpleaños/recursos/soplar1.mp3" preload="auto"></audio>
+    <audio id="soplido" src="soplar1.mp3" preload="auto"></audio>
     <audio
       id="cancion"
-      src="/proyectos/Feliz Cumpleaños/recursos/cancion.mp3"
+      src="cancion.mp3"
       preload="auto"
     ></audio>
     <div class="overlay"></div>
+
+    <!--- GALERÍA DE RECUERDOS -->
+
+    <div class="modal-galeria" id="modalGaleria">
+
+        <div class="album">
+
+            <div class="titulo-album">
+                📸 recuerdo valiosos
+            </div>
+
+            <div class="contenedor-fotos">
+
+                <img src="img1.jpeg">
+
+                <img src="img2.jpeg">
+
+                <img src="img3.jpeg">
+
+                <img src="img4.jpeg">
+
+            </div>
+
+        </div>
+
+    </div>
 
     <script src="Confeti.js"></script>
     <script src="Confeti2.js"></script>
